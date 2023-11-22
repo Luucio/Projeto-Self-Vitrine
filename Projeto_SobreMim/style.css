@@ -1,0 +1,171 @@
+ 
+
+body{
+    background-image: url(./img/background.png);
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    transition: background 0.2 linear;
+}
+
+.logoTelaInicial{
+    padding-left: 50px;
+    width: 159px;
+    height: 146px;
+    flex-shrink: 0;
+}
+
+.botaoSobre {
+    width: 242px;
+    height: 52px;
+    color: aliceblue;
+    border-radius: 100px;
+    border: 1px solid ;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 21px;
+    background-color: transparent;
+    box-shadow: 0 0 8px 4px #6bc6dc;
+}
+
+.botoes{
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    display: flex; /* Torna a lista um contêiner flexível */
+    justify-content: center; /* Centraliza os itens da lista */
+    margin: 0 10px;
+}.botaoSobre:hover {
+    color: white;
+    background-color: #6bc6dc; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1);
+}
+
+.BotoesSelecionados{
+    margin: 25px;
+    margin-top: -100px;
+}
+
+.FotoDePerfil{
+    display: flex;
+    width: 300px;
+    padding-top: 50px;
+    display: block; /* Remove espaços em branco abaixo da imagem quando exibida como elemento inline */
+    margin: 0 auto;
+}
+
+.Texto{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.caixaPrincipal{
+    background-color: #021524;
+    justify-content: center;
+    width: 500px;
+    height: 700px;
+    border: 1px solid white;
+    margin: auto;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 8px 4px #6bc6dc;
+}
+.BotaoSobreMim1{
+    padding-top: 15px;
+}
+.BotaoSobreMim{
+    width: 242px;
+    height: 52px;
+    color: aliceblue;
+    border-radius: 100px;
+    border: 1px solid ;
+    font-size: 21px;
+    background-color: transparent;
+    padding-top: px;
+}.BotaoSobreMim:hover{
+    color: white;
+    background-color: #6bc6dc; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1);
+}
+
+.CaixaAcessibilidade{
+    display: flex;
+    background-color: #021524;
+    border: 1px solid #6bc6dc;
+    border-radius: 10%;
+    width: 250px;
+    height: 200px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 8px 6px #6bc6dc;
+}
+
+.button{
+    z-index: 2;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 100px;
+    margin-right: 110px;
+}
+
+body.dark{
+    background-image: url(./img/background-dark.png);
+    background-size: cover;
+}
+
+.caixaPrincipal.dark{
+    background-color: white;
+}
+
+.checkbox{
+    opacity: 0;
+    position: absolute;
+}
+
+.label{
+    background-color: #178fc1;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+
+
+    
+    border: 1px solid #fff;
+}
+
+.label .ball {
+    background-color: #6bc6dc;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+  }
+
+  .checkbox:checked + .label .ball {
+    transform: translateX(34px);
+}
+
+.fa-moon {
+    z-index: 2;
+    color: #f1c40f;
+  }
+  
+  .fa-sun {
+    z-index: 2;
+    color: #f39c12;
+  }
